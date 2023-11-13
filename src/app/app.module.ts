@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import {FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+
 import { PrimeiroComponeteComponent } from './componentes/primeiro-componete/primeiro-componete.component';
 import { DadosPaiComponent } from './componentes/dados-pai/dados-pai.component';
 import { DiretivasComponent } from './componentes/diretivas/diretivas.component';
@@ -28,7 +30,9 @@ import { TwoWayBidingComponent } from './componentes/two-way-biding/two-way-bidi
     TwoWayBidingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
